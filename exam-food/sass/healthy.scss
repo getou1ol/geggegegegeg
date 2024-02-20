@@ -1,0 +1,67 @@
+@import "../sass/mixins.scss";
+@import "../sass/reset.scss";
+@import "../sass/vars.scss";
+.healthy{
+    max-width: 1440px;
+    min-height: 739px;
+}
+.healthy-block{
+    width: 541px;
+    height: 608px;
+    background-color: #42737A;
+    margin-top: 133px;
+}
+.healthy-block-img{
+    padding-left: 48px;
+    background-image: url(/images/Place\ Your\ Image\ \(1\).svg);
+    width: 459px;
+    height: 530px;
+}
+.healthy-blocks{
+    display: flex;
+    gap: 84px;
+}
+.healthy-block2{
+    padding-top: 222px;
+}
+.healthy-block2-p{
+    @include text($secondary-color, $font-family, 15px, normal, 500, normal, none)
+}
+.healthy-block2-p2{
+    padding-top: 20px;
+    @include text($secondary-color, $font-family, 60px, normal, 500, normal, none)
+}
+.healthy-block-2-img-p-g{
+    padding-top: 67px;
+    display: flex;
+    gap: 22px;
+}
+.healthy-block-2-img-p-g2{
+    padding-top: 20px;
+    display: flex;
+    gap: 22px;
+}
+.healthy-block-2-p-g{
+    @include text($secondary-color, $font-family, 16px, normal, 400, normal, none)
+}
+@media screen and (max-width: 415px){
+    .healthy-blocks{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .healthy-block{
+        margin-top: 5px;
+    }
+    .healthy-block2{
+        padding-top: 50px;
+    }
+    .healthy-block{
+        width: 285px;
+        height: 459px;
+    }
+    .healthy-block-img{
+        width: 215px;
+        height: 420px;
+    }
+}
